@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend-deploy
+  namespace: backend
+spec:
+  replicas: 2
+  revisionHistoryLimit: 3
+  selector:
+    matchLabels:
+      app: backend-deploy
+  template:
+    metadata:
+      labels:
+        app: backend-deploy
+    spec:
+      containers:
+        - name: backend-deploy
+          image: 222026462311.dkr.ecr.ap-northeast-2.amazonaws.com/gitops-test:v0.0.1
+          ports:
+            - containerPort: 3000
+          
