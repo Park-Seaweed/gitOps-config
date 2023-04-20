@@ -4,6 +4,7 @@ images:
 - name: /
   newName: /
 - name: 222026462311.dkr.ecr.ap-northeast-2.amazonaws.com/gitops-test
-  newName: 222026462311.dkr.ecr.ap-northeast-2.amazonaws.com/gitops-test:$IMAGE_TAG
+  newName: 222026462311.dkr.ecr.ap-northeast-2.amazonaws.com/gitops-test
+  newTag: v0.1.0
 resources:
 - ../../resources
