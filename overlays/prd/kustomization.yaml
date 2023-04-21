@@ -8,6 +8,3 @@ images:
   newTag: v0.1.0
 resources:
 - ../../resources/deployment.yaml
-- ../../resources/ingress.yaml
-- ../../resources/service.yaml
-- ../../resources/namespace.yaml
