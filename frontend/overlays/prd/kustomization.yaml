@@ -3,5 +3,8 @@ kind: Kustomization
 images:
 - name: /
   newName: /
+- name: 222026462311.dkr.ecr.ap-northeast-2.amazonaws.com/argocd-frontend
+  newName: 222026462311.dkr.ecr.ap-northeast-2.amazonaws.com/argocd-frontend
+  newTag: v0.0.2
 resources:
 - ../../resources
