@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend-deploy
+  namespace: frontendend
+spec:
+  replicas: 2
+  revisionHistoryLimit: 3
+  selector:
+    matchLabels:
+      app: frontend-deploy
+  template:
+    metadata:
+      labels:
+        app: frontend-deploy
+    spec:
+      containers:
+        - name: frontend-deploy
+          image: 222026462311.dkr.ecr.ap-northeast-2.amazonaws.com/argocd-frontend:v0.0.1
+          ports:
+            - containerPort: 3000
+          

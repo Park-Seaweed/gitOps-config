@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: backend-svc
-  namespace: backend
+  name: frontend-svc
+  namespace: frontend
   labels:
-    app: backend-deploy
+    app: frontend-deploy
 spec:
   type: NodePort
   ports:
@@ -13,4 +13,4 @@ spec:
       port: 3000
       targetPort: 3000
   selector:
-    app: backend-deploy
+    app: frontend-deploy
