@@ -6,7 +6,7 @@ metadata:
   labels:
     app: backend-deploy
 spec:
-  type: ClusterIP
+  type: NodePort
   ports:
     - name: http
       protocol: TCP
